@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Test</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+</head>
+<body>
+
+    <style>
+        body {
+            background-color: beige;
+            font-family:'Courier New', Courier, monospace
+        }
+    </style>
+
+    <h1>Food Ordering System</h1>
+
+    <h2>Menu:</h2>
+    <form>
+    <input type="checkbox" id="strawberry Cake" name="food" value="Strawberry Cake">
+        <label for="Strawberry Cake"> Strawberry Cake</label><br>
+
+        <input type="checkbox" id="chocolate Chip Cookie" name="food" value="Chocolate Chip Cookie">
+        <label for="Chocolate Chip Cookie"> Chocolate Chip Cookie</label><br>
+
+        <input type="checkbox" id="vanilla Cupcake" name="food" value="Vanilla Cupcake">
+        <label for="Vanilla Cupcake"> Vanilla Cupcake</label><br>
+
+        <input type="checkbox" id="Red Velvet Cake" name="food" value="Red Velvet Cake">
+        <label for="Red Velvet Cake"> Red Velvet Cake</label><br>
+
+        <input type="checkbox" id="Macarons" name="food" value="Macarons">
+        <label for="Macarons"> Macarons</label><br>
+    </form>
+
+     <h3>Customer Details:</h3>
+     <form>
+     <input type="text" id="customerName" placeholder="Enter your name"><br><br>
+     <input type="text" id="customerAddress" placeholder="Enter your address"><br><br>
+     <input type="text" id="customerContact" placeholder="Enter your contact"><br><br>
+
+     <button type="button" id="submitBtn">Create Order</button>
+     </form>
+
+     <h4>Order Summary:</h4>
+    <div id="summary"></div>
+
+    <py-config>
+        packages = []
+    </py-config>
+    <py-script src="main.py"></py-script>
+
+
+</body>
+</html>
